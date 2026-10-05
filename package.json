@@ -1,0 +1,50 @@
+{
+  "name": "exitprobe-mcp",
+  "version": "1.0.0",
+  "description": "ExitProbe MCP server \u2014 let Claude, Cursor, Windsurf or Cline inspect and manage your VPN monitors, VPS servers, incidents and usage.",
+  "type": "module",
+  "bin": {
+    "exitprobe-mcp": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "exitprobe",
+    "vpn-monitoring",
+    "uptime"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "exitprobe": "^1.1.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0",
+    "@types/node": "^22.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TecClubb/ExitProbe-MCP.git"
+  },
+  "homepage": "https://github.com/TecClubb/ExitProbe-MCP#readme",
+  "bugs": {
+    "url": "https://github.com/TecClubb/ExitProbe-MCP/issues"
+  },
+  "author": "TecClub"
+}
